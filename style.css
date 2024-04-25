@@ -1,0 +1,105 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+
+:root {
+  --top-margin-desktop: 4rem;
+  --top-margin-mobile: 2rem;
+  --bg-color: #212529;
+  --font-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+main {
+  flex: 1;
+  overflow: auto;
+  margin-top: var(--top-margin-desktop);
+  margin-bottom: 5rem;
+}
+
+.header {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+
+  text-align: center;
+}
+
+.photo-container {
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+.photo {
+  border-radius: 20px;
+  width: 80%;
+  max-width: fit-content;
+}
+
+.info {
+  float: left;
+  width: 60%;
+}
+
+.info ul {
+  width: 85%;
+  list-style-type: none;
+}
+.info ul li {
+  margin-bottom: 1.25rem;
+}
+p {
+  margin-top: 0.25rem;
+}
+a {
+  text-decoration: none;
+  color: #477bfc;
+}
+
+.footer {
+  background-color: var(--bg-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.uade {
+  width: 7.5%;
+}
+
+@media (max-width: 760px) {
+  .photo-container,
+  .info {
+    width: 100%;
+  }
+  .photo {
+    width: 80%;
+  }
+  main {
+    margin-top: var(--top-margin-mobile);
+  }
+  .uade {
+    width: 15%;
+  }
+}
